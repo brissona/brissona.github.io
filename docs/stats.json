@@ -1,0 +1,74 @@
+{
+  "assetsByChunkName": {
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-ab3f521a2dfae36c8433.js",
+      "component---src-pages-index-js-ab3f521a2dfae36c8433.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "component---src-pages-contact-js": [
+      "component---src-pages-contact-js-ae5ffd64b46e038a8a55.js",
+      "component---src-pages-contact-js-ae5ffd64b46e038a8a55.js.map"
+    ],
+    "path---projects": [
+      "path---projects-1db04e5021b40904aca6.js",
+      "path---projects-1db04e5021b40904aca6.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-d2a1d89bc1946eb584d1.js",
+      "component---src-layouts-index-js-d2a1d89bc1946eb584d1.js.map"
+    ],
+    "path---index": [
+      "path---index-1db04e5021b40904aca6.js",
+      "path---index-1db04e5021b40904aca6.js.map"
+    ],
+    "path---skills": [
+      "path---skills-1db04e5021b40904aca6.js",
+      "path---skills-1db04e5021b40904aca6.js.map"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
+    ],
+    "commons": [
+      "commons-b300071e3db7b0a0e680.js",
+      "commons-b300071e3db7b0a0e680.js.map"
+    ],
+    "path---404-html": [
+      "path---404-html-1db04e5021b40904aca6.js",
+      "path---404-html-1db04e5021b40904aca6.js.map"
+    ],
+    "path---contact": [
+      "path---contact-1db04e5021b40904aca6.js",
+      "path---contact-1db04e5021b40904aca6.js.map"
+    ],
+    "component---src-pages-projects-js": [
+      "component---src-pages-projects-js-35e3acf0b7d1eb87cffc.js",
+      "component---src-pages-projects-js-35e3acf0b7d1eb87cffc.js.map"
+    ],
+    "app": [
+      "app-d2c5b4cab73da6e3304f.js",
+      "build-js-styles.css",
+      "app-d2c5b4cab73da6e3304f.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---404": [
+      "path---404-1db04e5021b40904aca6.js",
+      "path---404-1db04e5021b40904aca6.js.map"
+    ],
+    "component---src-pages-skills-js": [
+      "component---src-pages-skills-js-e8848f747d566b187295.js",
+      "component---src-pages-skills-js-e8848f747d566b187295.js.map"
+    ],
+    "component---src-pages-about-js": [
+      "component---src-pages-about-js-8b71512135063b651691.js",
+      "component---src-pages-about-js-8b71512135063b651691.js.map"
+    ],
+    "path---about": [
+      "path---about-1db04e5021b40904aca6.js",
+      "path---about-1db04e5021b40904aca6.js.map"
+    ]
+  }
+}
