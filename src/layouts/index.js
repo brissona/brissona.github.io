@@ -11,7 +11,7 @@ const Navigation = () => (
     className='nav'
   >
     <Link
-      to="/about"
+      to="/site/about"
       className='nav-link'
       style={{
         display: 'block'
@@ -20,7 +20,7 @@ const Navigation = () => (
       About
     </Link>
     <Link
-      to="/skills"
+      to="/site/skills"
       className='nav-link'
       style={{
         display: 'block'
@@ -29,7 +29,7 @@ const Navigation = () => (
       Skills
     </Link>
     <Link
-      to="/projects"
+      to="/site/projects"
       className='nav-link'
       style={{
         display: 'block'
@@ -38,7 +38,7 @@ const Navigation = () => (
       Projects
     </Link>
     <Link
-      to="/contact"
+      to="/site/contact"
       className='nav-link'
       style={{
         display: 'block'
@@ -62,7 +62,7 @@ const Header = () => (
     >
       <h1 style={{ marginTop: 0 }}>
         <Link
-          to="/"
+          to="/site/"
           style={{
             color: 'white',
             textDecoration: 'none'
