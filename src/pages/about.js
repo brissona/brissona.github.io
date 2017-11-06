@@ -59,7 +59,7 @@ const AboutPage = () => (
           Favorite band? 
         </header>
         <p>Easy! Tame Impala.</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/FAcaAeIwl1Q?rel=0" frameborder="0" allowfullscreen></iframe>
+        <iframe width="420" height="275" src="https://www.youtube.com/embed/FAcaAeIwl1Q?rel=0" frameborder="0" allowfullscreen></iframe>
       </section>
     </article>
   </div>

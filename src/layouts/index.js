@@ -11,7 +11,7 @@ const Navigation = () => (
     className='nav'
   >
     <Link
-      to="/docs/about"
+      to="/about"
       className='nav-link'
       style={{
         display: 'block'
@@ -20,7 +20,7 @@ const Navigation = () => (
       About
     </Link>
     <Link
-      to="/docs/skills"
+      to="/skills"
       className='nav-link'
       style={{
         display: 'block'
@@ -29,7 +29,7 @@ const Navigation = () => (
       Skills
     </Link>
     <Link
-      to="/docs/projects"
+      to="/projects"
       className='nav-link'
       style={{
         display: 'block'
@@ -38,7 +38,7 @@ const Navigation = () => (
       Projects
     </Link>
     <Link
-      to="/docs/contact"
+      to="/contact"
       className='nav-link'
       style={{
         display: 'block'
@@ -50,10 +50,24 @@ const Navigation = () => (
 )
 
 const Header = () => (
+  <div className="drawer">
+  <div className="navbar">
+    <button
+      className="btn btn-primary expand-drawer"
+      onClick={() => {
+        var headerWrapper = document.querySelector('.header-wrapper');
+        var docEle = document.documentElement;
+        headerWrapper.classList = headerWrapper.classList + ' expanded';
+        docEle.addEventListener('click', function() {
+          headerWrapper.classList = 'header-wrapper';
+        });
+    }}>Menu</button>
+  </div>
   <div
     className="header-wrapper"
   >
     <div
+      className="header"
       style={{
         margin: '0 auto',
         maxWidth: 960,
@@ -62,7 +76,7 @@ const Header = () => (
     >
       <h1 style={{ marginTop: 0 }}>
         <Link
-          to="/docs/"
+          to="/"
           style={{
             color: 'white',
             textDecoration: 'none'
@@ -74,6 +88,7 @@ const Header = () => (
     </div>
     <Navigation />
   </div>
+  </div>
 )
 
 const TemplateWrapper = ({ children }) => (
@@ -82,7 +97,7 @@ const TemplateWrapper = ({ children }) => (
       title="A.J. Brisson | brissona.github.io"
       meta={[
         { name: 'description', content: 'Website for A.J. Brisson, App Development Senior Specialist. Specializing in Front end development.' },
-        { name: 'keywords', content: 'A.J., Brisson, front end developer' },
+        { name: 'keywords', content: 'A.J., Brisson, front end developer' }
       ]}
     />
     <div

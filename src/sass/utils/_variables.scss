@@ -22,11 +22,12 @@ $colors: (
   'teal': $steel-teal,
   'blue': $deep-koamaru,
   'indigo': $indigo,
+  'light-indigo': $light-indigo,
   'white': $white
 );
 
 $primary: map-get($map: $colors, $key: 'indigo');
-$secondary: map-get($map: $colors, $key: 'teal');
+$secondary: map-get($map: $colors, $key: 'light-indigo');
 
 $theme-colors: ();
 

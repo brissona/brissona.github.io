@@ -2,30 +2,49 @@
 @import '../sass/utils/mixins';
 
 .wrapper {
-  display: flex;
   min-height: 100vh;
   position: relative;
+  @media (min-width: 768px) {
+    display: flex;
+  }
 }
 
 // Typography
 h1, h2, h3, h4, h5, header,
 .h1, .h2, .h3, .h4, .h5 {
   font-family: 'Roboto';
-}
-
-h1, h2,
-.h1, .h2 {
-  font-weight: 500;
   line-height: 1.2;
 }
 
-h3, h4,
-.h3, .h4 {
-  font-weight: 300;
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4 {
+  font-weight: 500;
+}
+
+.h1, h1 {
+  font-size: 2.5rem;
+}
+
+.h2, h2 {
+  font-size: 2.25rem;
+}
+
+.h3, h3 {
+  font-size: 1.75rem;
+}
+
+.h4, h4 {
+  font-size: 1.5rem;
 }
 
 .display-text {
   font-weight: 300;
+}
+
+.lead-paragraph {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
 }
 
 // Typography
@@ -44,14 +63,89 @@ a {
 
 // End Links
 
+// Begin Buttons
+
+.btn {
+  border: none;
+  padding: 0.5rem 1rem;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.btn-primary {
+  background-color: map-get($map: $theme-colors, $key: 'secondary');
+  color: colors('white');
+
+  &:hover {
+    background-color: map-get($map: $theme-colors, $key: 'primary');
+    transition: background-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  &:active {
+    background-color: #001064;
+  }
+}
+
+// End Buttons
+
 // Begin Nav Styling 
+
+.drawer {
+  z-index: 1200;
+  @media screen and (min-width: 768px) {
+    flex: 1 0 auto;
+    left: 0;
+    position: fixed;
+    right: auto;
+    top: 0;
+    width: 27.5%;
+  }
+  @media screen and (min-width: 992px) {
+    width: 17rem;
+  }
+}
+
+.navbar {
+  background-color: #E8EAF6;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+  display: block;
+  padding: 0.5rem 0.25rem;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
 
 .header-wrapper {
   background-color: map-get($theme-colors, 'primary');
+  border-right: 0.25rem solid map-get($theme-colors, 'secondary');
+  display: block;
+  height: 100%;
+  min-height: 100vh;
+  z-index: 1300;
+  @media screen and (max-width: 767px) {
+    bottom: 0;
+    left: -40vw;
+    position: absolute;
+    top: 0;
+    transform: tranlateX(-40vw);
+    transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    width: 40vw;
+  }
   @media screen and (min-width: 768px) {
-    border-right: 0.25rem solid map-get($theme-colors, 'secondary');
-    box-shadow: 0.25rem 0 1rem 0.25rem #999;
-    flex: 1 0 25%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
+  }
+
+  &.expanded {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
+    transform: translateX(40vw);
+  }
+
+  h1 {
+    @media (max-width: 767px) {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -74,9 +168,16 @@ a {
 // Start main styling
 
 .main {
+  display: block;
+  padding: 1.45rem 1.0875rem;
+  position: relative;
+  z-index: 0;
   @media (min-width: 768px) {
-    flex: 3 0 75%;
-    padding: 1.45rem 1.0875rem;
+    flex: 3 0 70%;
+    padding-left: calc(27.5% + 1.0875rem);
+  }
+  @media (min-width: 992px) {
+    padding-left: calc(17rem + 1.0875rem);
   }
 }
 
